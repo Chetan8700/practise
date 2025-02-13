@@ -1,0 +1,35 @@
+<style>
+    .signup-container {
+      background-image: url('https://cdn.discordapp.com/attachments/596384858608238619/1292924934112153661/output.png?ex=670581ad&is=6704302d&hm=b845ce5247d2408c5ea4111fc7d91e447244723b6c3b1fe37542de7a6d011495&'); /* Replace with the path to your image */
+      background-size: cover; /* Make sure the image covers the entire section */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      padding: 20px; /* Optional: add padding for content spacing */
+    }
+  
+    .form-wrapper {
+      background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a white background with some transparency */
+      padding: 20px;
+      border-radius: 10px; /* Optional: Add rounded corners to the form wrapper */
+    }
+  </style>
+  
+  <section class="signup-container">
+    <div class="form-wrapper">
+       <h2 class="signup-title">Sign Up</h2>
+       <form id="loginForm" method="POST" action="/login">
+           <div class="input-group">
+               <label for="username" class="label-text text-dark">Username</label>
+               <input type="text" name="username" id="username" class="input-field" style="color: black;" required />
+           </div>
+           <div class="input-group">
+               <label for="password" class="label-text text-dark">Password</label>
+               <style>
+                   .input-field::placeholder {
+                     color: grey; /* Set the color of the placeholder */
+                   }
+                 </style>
+               <input type="password" name="password" id="password" class="input-field" style="color: black" required />
+           </div>
+           <button type="submit" class="login-button">Login</button>
+       </form>
